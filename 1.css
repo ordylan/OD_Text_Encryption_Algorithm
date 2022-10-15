@@ -1,0 +1,16 @@
+body {
+  background-color: #E6E6E6;
+}
+textarea#jiamidecode
+{
+    width:60%;
+    height:30%;
+}
+pre#out{
+    width:80%;
+    height:50%;
+}
+xmp#out{
+    width:80%;
+    height:50%;
+}
