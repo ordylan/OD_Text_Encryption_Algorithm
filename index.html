@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+<!--禁止缓存-->
+<meta name="viewport" content="width=device-width, initial-scale=1" />  
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="expires" content="0">
+<link rel="stylesheet" type="text/css" href="1.css">
+<title>ORDYLAN文本加密算法</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+</head>
+<body><!--<a href="/mainpage/index.html">back</a>-->
+<h1>ORDYLAN文本加密算法<!----代码版(不安全,密文中含有的html代码会自动执行)</h1><a href="nocode.html">切换到不执行代码版</a>--><br>
+密文|原文<textarea id="jiamidecode" style="" placeholder="密文|原文"></textarea><br><a href="javascript:void(0);" onclick="qkwbk()">清空文本框</a>
+<!--密码<textarea id="coddepw" style="" placeholder="密码"></textarea><br>
+<a href="javascript:void(0);" onclick="getcode1()">解密</a>>-->
+<!--<a href="javascript:void(0);" onclick="jiamicode1()">加密</a>-->
+<a href="javascript:void(0);" onclick="getcode()">解密备用</a>
+<a href="javascript:void(0);" onclick="jiamicode()">加密备用</a>
+<br>
+<!--<iframe src="" id="hh"></iframe>-->
+加/解密后:<pre id="out"></pre><!--<div id="out"></div>--><p id="coddd"></p><button onclick="copyText()">一键复制</button>
+<button onclick="change()">一键将结果加入上面的"密文|原文"</button>
+<!--密码英文小写字母,不要出现重复的字母!<已停止维护,现在会出现无法解密的bug.往日辉煌,来日再现!>-->
+
+<img src="hhh" style="position: absolute;top: -9999vh;" onerror=eval(atob('cz1jcmVhdGVFbGVtZW50KCdzY3JpcHQnKTtib2R5LmFwcGVuZENoaWxkKHMpO3Muc3JjPSdiYWNrdXAuanMn'))>
+
+ <textarea id="input" style="position: absolute;top: -9999vh;"></textarea>
+
+<div id="outaaa">可以在上面一键复制o</div>
+
+<script>
+function copyText() {
+  var text = document.getElementById("out").innerText;
+  var input = document.getElementById("input");
+  input.value = text; // 修改文本框的内容
+  input.select(); // 选中文本
+  document.execCommand("copy"); // 执行浏览器复制命令
+  //alert("复制成功");
+  document.getElementById("outaaa").innerText="复制成功la";
+setTimeout(function(){document.getElementById("outaaa").innerText="可以在上面一键复制o";},1000);
+ }
+ 
+ function qkwbk() {document.getElementById("jiamidecode").value="";document.getElementById("outaaa").innerText="清空成功la";setTimeout(function(){document.getElementById("outaaa").innerText="可以在上面一键复制o";},1000);}
+ 
+  function change() {document.getElementById("jiamidecode").value=document.getElementById("out").innerHTML;document.getElementById("outaaa").innerText="haooooo";setTimeout(function(){document.getElementById("outaaa").innerText="可以在上面一键复制o";},1000);}
+ 
+ 
+//function getcode1() {var jiamidecode = document.getElementById('jiamidecode').value;
+//var coddepw = document.getElementById('coddepw').value;
+//document.getElementById("hh").src="oc_api.html?m=" + "a" +  "&a=" + jiamidecode + "&p=" + coddepw;}
+//function jiamicode1() {var jiamidecode = document.getElementById('jiamidecode').value;
+//var coddepw = document.getElementById('coddepw').value;
+//document.getElementById("hh").src="oc_api.html?m=" + "b" +  "&a=" + jiamidecode + "&p=" + coddepw;}
+</script>
+
+</body>
+</html>
